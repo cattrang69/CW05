@@ -1,0 +1,72 @@
+:root {
+  --card-bg: #ffffff;
+  --card-radius: 14px;
+  --space-md: 20px;
+  --title-color: #0f172a;
+  --accent-sky: #61dafb;
+  --body-bg: #f8fafc;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--body-bg);
+  color: #334155;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.task-card {
+  background: var(--card-bg);
+  padding: var(--space-md);
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+  border: 1px solid #e2e8f0;
+}
+
+.task-card h1, .task-card h2 {
+  margin-top: 0;
+  color: var(--title-color);
+  font-size: 1.7rem;
+}
+
+button {
+  background-color: var(--accent-sky);
+  border: none;
+  color: #0f172a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  filter: brightness(0.9);
+  transform: translateY(-1px);
+}
+
+.filter-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  flex-grow: 1;
+}
