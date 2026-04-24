@@ -1,7 +1,8 @@
+import React, { Component } from 'react'; 
 import HelloWorld from './HelloWorld';
 import Counter from './Counter';
 import FilteredList from './FilteredList';
-
+import './App.css'; 
 
 const produce = [
   { name: "Apple", type: "Fruit" },
@@ -10,7 +11,6 @@ const produce = [
   { name: "Broccoli", type: "Vegetable" },
   { name: "Strawberry", type: "Fruit" }
 ];
-
 
 class App extends Component {
   render() {
@@ -31,6 +31,5 @@ class App extends Component {
     );
   }
 }
-
 
 export default App;
